@@ -2,9 +2,14 @@
   "name": "runjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node .",
+    "dev": "nodemon src/app.ts",
+    "prettier": "prettier --write src/**/*.{ts,json}",
+    "lint": "eslint src/**/*.{ts,json}",
+    "lint:fix": "eslint src/**/*.{ts,json} --fix",
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
